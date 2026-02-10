@@ -1,13 +1,19 @@
-org 0x7C00          
+org 0x7C00
 
-mov ah, 0x0E        
-mov al, 'X'
-int 0x10
+mov ah, 0x0E
+mov si, msg
 
-mov al, 'i'
-int 0x10
+.loop:
+    lodsb
+    cmp al, 0
+    je .done
+    int 0x10
+    jmp .loop
 
-jmp $             
+.done:
+    jmp $
+
+msg db 'Hello World',0
 
 times 510-($-$$) db 0
-dw 0xAA55           
+dw 0xAA55
