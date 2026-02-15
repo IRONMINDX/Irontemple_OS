@@ -1,10 +1,22 @@
-# Irontemple_OS
-This is a hobby project OS inspired by linux.
+# IrontempleOS
 
-Main features I would like to hopefully implement are:
-1.Absolute privacy
-2.Absolute user control
-3.Runs lightweight even on old hardware
-4.Ease of use
+A hobby x86 operating system written from scratch, currently running in 16-bit real mode.
 
-Possibly Stand out in the world of OSes in some way 🤞
+## Current Features
+- Custom bootloader
+- Prints string via BIOS interrupt
+- Runs in real mode
+
+## Roadmap
+- Switch to Protected Mode
+- Basic GDT setup
+- Enable paging
+- Enter Long Mode
+- Minimal VGA driver
+- Custom memory allocator
+
+## Why?
+Built to understand how operating systems actually work at a low level instead of abstracting everything behind frameworks.
+
+## Build Instructions
+Coming soon.
