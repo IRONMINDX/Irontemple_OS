@@ -4,4 +4,5 @@
 .vscode/
 *.elf
 *.iso
-build/
+build/*
+!build.gitkeep
